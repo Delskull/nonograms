@@ -1,1 +1,1 @@
- https://delskull.github.io/nonograms/index.html
+https://delskull.github.io/nonograms/nonograms/index.html
