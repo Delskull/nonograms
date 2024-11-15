@@ -1,0 +1,228 @@
+@import "nullstyle.css";
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: darkgrey;
+  padding: 40px;
+}
+.mainBlock {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rebeccapurple;
+  padding: 40px;
+}
+.crossword {
+  position: relative;
+  display: flex;
+}
+.cell_square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  background-color: white;
+}
+.crossword_row {
+  display: flex;
+  flex-direction: column;
+}
+.crossword_square {
+  display: flex;
+  border: 2px solid black;
+  height: 20%;
+}
+.black {
+  background-color: black;
+}
+.crossword_hints-top {
+  display: flex;
+  flex-direction: column;
+}
+.hints_container-top {
+  display: flex;
+  position: absolute;
+  top: -40%;
+  border-width: 2px 2px 0 2px;
+  border-style: solid;
+  border-color: black;
+  height: 41%;
+}
+.hints_square {
+  display: flex;
+  background-color: lightgrey;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+}
+.hints_container-left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 100%;
+  border-width: 1px 0 2px 2px;
+  border-style: solid;
+  border-color: black;
+  height: 100%;
+}
+.hints_container-space {
+  display: flex;
+  position: absolute;
+  right: 100%;
+  border-width: 2px 0 2px 2px;
+  border-style: solid;
+  border-color: black;
+  height: 41%;
+  top: -40%;
+  background-color: white;
+}
+.crossword_hints-space {
+  display: flex;
+  flex-direction: column;
+}
+.crossword_hints-left {
+  display: flex;
+}
+.hints_space {
+  width: 8px;
+  height: 8px;
+}
+.visibility {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.modal__wrapper_mini,
+.modal__wrapper_medium,
+.modal__wrapper_max {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.3);
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: all 0.3s linear;
+}
+.modalWindow__mini,
+.modalWindow__medium,
+.modalWindow__max {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  background-color: lavender;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev__button {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+}
+
+.prev__button {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+}
+
+.prev__button:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.prev__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.modal__img {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  height: 4%;
+  position: absolute;
+  bottom: -2%;
+  right: 46%;
+}
+.menu__clearBtn,
+.menu__backBtn,
+.menu__answerBtn {
+  width: 100%;
+  font-size: 10px;
+  margin-left: 20px;
+}
+a {
+  margin: 10px;
+}
+.crossword_row__black {
+  border-right: 1px solid black;
+}
+.crossword_row__black_left {
+  border-bottom: 1px solid black;
+}
+#cell-0-5,
+#cell-1-5,
+#cell-2-5,
+#cell-3-5,
+#cell-4-5,
+#cell-5-5,
+#cell-6-5,
+#cell-7-5,
+#cell-8-5,
+#cell-9-5,
+#cell-10-5,
+#cell-11-5,
+#cell-12-5,
+#cell-13-5,
+#cell-14-5,
+#cell-0-10,
+#cell-1-10,
+#cell-2-10,
+#cell-3-10,
+#cell-4-10,
+#cell-5-10,
+#cell-6-10,
+#cell-7-10,
+#cell-8-10,
+#cell-9-10,
+#cell-10-10,
+#cell-11-10,
+#cell-12-10,
+#cell-13-10,
+#cell-14-10 {
+  border-bottom: 1px solid black;
+}
