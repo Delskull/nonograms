@@ -1,0 +1,39 @@
+@media (min-width: 360px) and (max-width: 767px) {
+  .header {
+    margin-top: 0px;
+  }
+  .startWindow_text {
+    text-align: center;
+  }
+  .startWindow_buttons {
+    width: 100%;
+  }
+  .modalWindow__mini,
+  .modalWindow__medium,
+  .modalWindow__max {
+    width: 80%;
+    height: 50%;
+  }
+  .modal__img {
+    flex-wrap: wrap;
+  }
+  .mainBlock {
+    padding-left: 130px;
+  }
+  .cell_square {
+    width: 15px;
+    height: 15px;
+  }
+  .hints_square {
+    width: 15px;
+    height: 15px;
+  }
+  .hints_space {
+    width: 6px;
+    height: 6px;
+  }
+  .menu {
+    bottom: 10%;
+    right: 29%;
+  }
+}
